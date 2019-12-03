@@ -5,84 +5,100 @@ layout: layouts/base.njk
 templateEngineOverride: njk, md
 ---
 
-{% render '@vf-intro', {"vf_intro_phase": "alpha", "vf_intro_heading": siteConfig.siteInformation.title,
-  "vf_intro_lede": siteConfig.siteInformation.short_description,
-  "vf_intro_text": [
-    "☝️ that also means dynamic building of just the CSS and JS you need."
-  ]
-} %}
-
-<section class="embl-grid embl-grid--has-centered-content">
+<section class="vf-intro | embl-grid embl-grid--has-centered-content">
   <div>
     <!-- empty -->
   </div>
-  <div class="vf-content">
-  {% markdown %}
-
-  ## Quickstart
-
-  ```
-
-      yarn create @visual-framework/vf-eleventy your-new-site-name vf-eleventy   
-
-  ```
-
-  This will install a new [`vf-eleventy`](https://github.com/visual-framework/vf-eleventy/) to a folder named `your-new-site-name`.
-
-  Then follow the onscreen prompts and links below to develop and configure.
-
-  ## Longer install?
-
-  The above too easy or have questions? [Read this guide](https://github.com/visual-framework/vf-eleventy#1-creating-a-new-project-powered-by-vf-eleventy).
-
-  {% endmarkdown %}
-
+  <div>
+    <h1 class="vf-intro__heading vf-intro__heading--has-tag">About EMBL partnerships <a href="JavaScript:Void(0);"
+        class="vf-badge vf-badge--primary vf-badge--phases">beta</a></h1>
+    <p class="vf-lede">Common questions about our partnerships and affiliate institutiones </p>
+    <p class="vf-intro__text">EMBL institutional partnerships are close cooperative affiliations between EMBL and
+      external institutions of comparable standard, vision and international orientation.</p>
+    <p class="vf-intro__text">They are working relationships
+      at the institutional level that are based on shared institutional goals and scientific synergy or complementarity.
+    </p>
+    <p class="vf-intro__text">Their aim is to leverage the successful EMBL model and competences, together with the
+      strengths of the partners,
+      to create an interlinked system of excellent institutions and thus enhance the development of the molecular life
+      sciences in Europe and the world.
+    </p>
   </div>
 </section>
-
-
-<section class="vf-intro | embl-grid embl-grid--has-centered-content">
-
-<div>
-  <!-- empty -->
-</div>
-<div class="vf-content">
-
-## What you get
-
-- the Eleventy static site generator
-- access to the Visual Framework component system
-
-### Component installation
-
-To add a component you can use npm/Yarn or install it manually.
-
-In either case you'll need to re-run `gulp dev` to ensure the component is fully loaded.
-
-- installation: `yarn add @visual-framework/vf-logo`
-- updating: `yarn upgrade-interactive --latest`
-
-### Manual installation for customisation
-
-1. Download a pattern
-2. Copy it to `./src/components/vf-component-name`
-
-### Add your own local component
-
-You can add a custom VF-compatible component to `./src/components` and use it in
-your site.
-
-- `gulp vf-component`
-
-You'll find a `vf-sample` component there, we've used it below:
-
-<div class="vf-box">
-{% verbatim %}
-Code: {% render "@vf-sample", {text: "with some text"} %}
-{% endverbatim %}
-
-Returns: {% render "@vf-sample", {text: "with some text"} %}
-</div>
-
-</div>
+<section class="vf-content | embl-grid embl-grid--has-centered-content">
+  <div>
+    <!-- empty -->
+  </div>
+  <div>
+    <h3>What is the mechanism for establishing a partnership?</h3>
+    <p>Once a proposal for collaboration is on the table, the EMBL directorship launches a negotiation procedure with
+      the interested institution. The negotiation draws on a set of general rules, established by EMBL Council
+      simultaneously with the approval of the Scientific Programme 2001-2005. According to these rules, EMBL
+      partnerships are special cooperations with national institutions in EMBL member states that do not require Council
+      approval. The final decision to enter into a partnership is at the discretion of EMBL Director General.</p>
+    <h3>What are the main requirements for establishing a partnership?</h3>
+    <p>Although every partnership is tailor made in order to best serve the needs of the institutions involved, there
+      are certain criteria that should be met. Most importantly, all EMBL partnerships build upon the principle of
+      scientific excellence.</p>
+      <p>Partner institutes should be – or have the ambition to become – leading at least at the national level, preferably
+      at the international level, in the research area they pursue.</p>
+      <p>Also, for the partnership to be of mutual benefit, partner institutes should be engaged in activities that
+      complement the research conducted in EMBL. Scientific complementarity can be fulfilled in different ways: it can
+      encompass entire research fields that are not covered by EMBL or areas in which EMBL is active, but in which
+      synergy can be achieved through a partnership.</p>
+      <p>Further, partner institutes are encouraged to adopt aspects of EMBL administrative model, such as international
+      recruitment, regular external review, staff turnover system, etc.</p>
+      <p>Notably, although EMBL can provide to its partners resources in terms of scientific expertise and exchange of
+      services and know-how, net transfer of EMBL financial resources to partner institutes is not possible. Partner
+      organisations are responsible for securing their own funding.</p>
+    <h3>Why does EMBL enter into partnerships?</h3>
+    <p>There are two main incentives for entering into partnerships. Firstly, EMBL and the partner organisations
+        mutually reinforce the quality of their research by complementing each other’s expertise, exchanging valuable
+        know-how and making joint use of services and infrastructure. Second, partnerships satisfy the member states’
+        request for integration of national scientific communities within EMBL’s research culture and scientific
+        expertise.</p>
+    <h3>What are the characteristics of local and remote partnerships?</h3>
+    <p>Current institutional partnerships are divided into two categories: local and remote.</p>
+        <p>Local partnerships involve institutions on or near EMBL campuses, and emerged from the recognised benefits of
+        sharing infrastructure and equipment. Due to their nature they stimulate close collaboration between the
+        stakeholders and facilitate the coordination of all activities taking place within the joint unit.</p>
+        <p>Remote partnerships were inspired by the desire of member states to make sure that EMBL’s research strategy and
+        successful operational model are implemented on the national level. In this sense, remote partnerships comprise
+        not only an inter-institutional research initiative, but also a tool for securing better integration and
+        participation of national scientific communities into EMBL’s activities and opportunity for national
+        institutions to benefit from EMBL’s successful organisational model.</p>
+    <h3>What are the benefits for a partner institute?</h3>
+    <p>By entering into partnership with EMBL, partner institutes gain significant international visibility and add
+          to their international profile. As a result, the recruitment system of partner institutes is
+          internationalised, and the quality and quantity of their recruitment pool is enhanced.</p>
+          <p>Additionally, partnerships bridge the expertise of highly qualified researchers and thus facilitate ambitious
+          joint research projects whose goals can only be accomplished through a coordinated European effort.</p>
+    <h3>How are partner institutes selected?</h3>
+    <p>Research institutes should fulfill the aforementioned requirements in order to be eligible for potential
+          partnerships. EMBL approaches partnerships in two ways – reactively and proactively.</p>
+          <p>Proactively, partnerships are initiated by EMBL whenever there is a need for scientific collaboration, usually
+          in terms of shared infrastructure, facilities and services. Local partnerships were created in this manner.</p>
+          <p>Reactively, EMBL would not seek out new partnerships, but would consider a potential collaboration once a
+          proposal is raised by member states. This approach is used in the establishment of remote partnerships.
+          Overall, the reactive approach prevails in EMBL partnership policy. Once a member state partnership initiative
+          is approved, there are various methods of selecting the partner institute.</p>
+        <a id="harsh" href="#" class="vf-link ">EMBL partnerships</a>
+  </div>
 </section>
+<hr clas="vf-divider">
+<section class="embl-grid embl-grid--has-centered-content">
+  <div>
+    <h1 class="vf-text vf-text-heading--3">News from our partners</h1>
+  </div>
+  <div>
+    <link rel="import"
+      href="https://dev.content.embl.org/api/v1/pattern.html?filter-content-type=article&filter-field-value%5Bfield_article_type%5D=article_timely&filter-fields-exists=field_display_title%2Cfield_teaser%2Cfield_canonical_location&limit=2&pattern=vf-news-item-default&sort-field-value%5Bcreated%5D=DESC"
+      data-target="self" data-embl-js-content-hub-loader>
+  </div>
+  </section>
+  <hr clas="vf-divider">
+<section class="embl-grid embl-grid--has-centered-content">
+  <div>
+    <h1 class="vf-text vf-text-heading--3">Jobs at partner institutions</h1>
+  </div>
+  </section>
