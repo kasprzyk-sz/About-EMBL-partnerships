@@ -793,6 +793,11 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-text/-/vf-text-1.0.0-beta.8.tgz#fb060909773fe233e2cbb5996330246a9be144f6"
   integrity sha512-omrFhU6Uy9spxGq2fjgLRU2rrYzjJ+0K+uMwc9uObCxMtsrxvy5NQxBXfG5Mh9JDnk/wKZBLMgT7yeO3HYRH4A==
 
+"@visual-framework/vf-tree@^0.0.2-alpha.0":
+  version "0.0.2-alpha.0"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-tree/-/vf-tree-0.0.2-alpha.0.tgz#43f30c48171f6cda018c25884b8d923f70412536"
+  integrity sha512-++ohFypaAb4/s2Ll/MDRsd08VBgYuU9GUmTMySeGotOejNx3PCrChiQqsxKRVxPZbzmgWgwW4RGEYNGXU61zXQ==
+
 "@visual-framework/vf-utility-classes@^1.0.0-beta.9":
   version "1.0.0-beta.9"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-utility-classes/-/vf-utility-classes-1.0.0-beta.9.tgz#cc76272dca40877bdbceb65ca6f1616d323a7d9f"
